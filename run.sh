@@ -1,6 +1,5 @@
-sleep 40
+sleep 80
 
-pip install -r requirements.txt
 flask db init
 flask db migrate -m "initial migration"
 flask db upgrade

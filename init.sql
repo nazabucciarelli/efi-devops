@@ -1,4 +1,5 @@
 CREATE DATABASE efi_devops_db;
+/*CREATE DATABASE efi_devops_db;
 
 USE efi_devops_db;
 
@@ -32,4 +33,4 @@ CREATE TABLE product (
   KEY `category_id` (`category_id`),
   CONSTRAINT `product_ibfk_1` FOREIGN KEY (`added_by`) REFERENCES `user` (`id`),
   CONSTRAINT `product_ibfk_2` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`)
-);
+); */

@@ -1,9 +1,9 @@
 CREATE DATABASE efi_devops_db;
-/*CREATE DATABASE efi_devops_db;
+CREATE DATABASE efi_devops_db;
 
 USE efi_devops_db;
 
-CREATE TABLE user (
+CREATE TABLE efi_devops_db.user (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(50) NOT NULL,
   `password` varchar(20) NOT NULL,
@@ -12,7 +12,7 @@ CREATE TABLE user (
   UNIQUE KEY `username` (`username`)
 );
 
-CREATE TABLE category (
+CREATE TABLE efi_devops_db.category (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
   `visible` tinyint(1) NOT NULL,
@@ -20,7 +20,7 @@ CREATE TABLE category (
   UNIQUE KEY `name` (`name`)
 );
 
-CREATE TABLE product (
+CREATE TABLE efi_devops_db.product (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
   `category_id` int(11) NOT NULL,
@@ -33,4 +33,4 @@ CREATE TABLE product (
   KEY `category_id` (`category_id`),
   CONSTRAINT `product_ibfk_1` FOREIGN KEY (`added_by`) REFERENCES `user` (`id`),
   CONSTRAINT `product_ibfk_2` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`)
-); */
+); 

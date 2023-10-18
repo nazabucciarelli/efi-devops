@@ -1,3 +1,4 @@
+echo "sleep of 80 seconds"
 sleep 80
 
 flask db init

@@ -30,6 +30,35 @@ Once finished the execution, you will be able to use the API through your browse
 
 ## Endpoints
 
+ - /user POST / GET (All)
+ - /user/{id} PUT / DELETE / GET
+ ```bash
+    JSON payload format:
+    {
+    "username":"username",
+    "password":"password"
+    }
+```
+ - /category POST / GET (All)
+ - /category/{id} PUT / DELETE / GET
+```bash
+    JSON payload format:
+    {
+    "name":"category_name"
+    }
+ ```
+ - /product
+ - /product/{id}
+ ```bash
+    JSON payload format:
+    {
+    "name":"product_name",
+    "category_id":category_id,
+    "price":price,
+    "added_by":user_id
+    }
+ ```
+
 
 ## Authors
 

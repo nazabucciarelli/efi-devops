@@ -22,7 +22,7 @@ Otherwise, run:
 ```bash
   sudo apt-get install docker-compose
 ```
-After instalation process, open a terminal in project's directory and run:
+After installation process, open a terminal in project's directory and run:
 ```bash
   sudo docker-compose up
 ```
